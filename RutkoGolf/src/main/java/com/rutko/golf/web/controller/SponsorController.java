@@ -4,6 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.rutko.golf.model.hibernate.Sponsor;
@@ -52,14 +54,14 @@ public class SponsorController extends AbstractController{
 	}
 	
 	private void setParameters(Sponsor sponsor, HttpServletRequest request){
-		sponsor.setName(request.getParameter("name")) ;
-		sponsor.setDescription(request.getParameter("description")) ;
-		sponsor.setAddress(request.getParameter("address")) ;
-		sponsor.setCity(request.getParameter("city")) ;
-		sponsor.setState(request.getParameter("state")) ;
+		sponsor.setName(Jsoup.clean(request.getParameter("name"), Whitelist.none())) ;
+		sponsor.setDescription(Jsoup.clean(request.getParameter("description"), Whitelist.relaxed())) ;
+		sponsor.setAddress(Jsoup.clean(request.getParameter("address"), Whitelist.none())) ;
+		sponsor.setCity(Jsoup.clean(request.getParameter("city"), Whitelist.none())) ;
+		sponsor.setState(Jsoup.clean(request.getParameter("state"), Whitelist.none())) ;
 		sponsor.setZip(Integer.parseInt(request.getParameter("zip"))) ;
-		sponsor.setPhone(request.getParameter("phone")) ;
-		sponsor.setWebsite(request.getParameter("website")) ;
+		sponsor.setPhone(Jsoup.clean(request.getParameter("phone"), Whitelist.none())) ;
+		sponsor.setWebsite(Jsoup.clean(request.getParameter("website"), Whitelist.relaxed())) ;
 	}
 	
 	

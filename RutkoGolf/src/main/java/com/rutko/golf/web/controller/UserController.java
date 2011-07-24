@@ -4,6 +4,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.rutko.golf.model.hibernate.User;
@@ -23,10 +25,10 @@ public class UserController extends AbstractController{
 		if(request.getSession().getAttribute("user") != null){
 			if(StringUtils.equalsIgnoreCase(request.getParameter(this.getActionparam()), "create")){
 				User user = new User() ;
-				user.setUsername(request.getParameter(this.getUsernameparam())) ;
-				user.setPassword(request.getParameter(this.getPasswordparam())) ;
-				user.setFname(request.getParameter(this.getFnameparam())) ;
-				user.setLname(request.getParameter(this.getLnameparam())) ;
+				user.setUsername(Jsoup.clean(request.getParameter(this.getUsernameparam()), Whitelist.none())) ;
+				user.setPassword(Jsoup.clean(request.getParameter(this.getPasswordparam()), Whitelist.basic())) ;
+				user.setFname(Jsoup.clean(request.getParameter(this.getFnameparam()), Whitelist.none())) ;
+				user.setLname(Jsoup.clean(request.getParameter(this.getLnameparam()), Whitelist.none())) ;
 				user.setAccount_type(0) ;
 				this.getUsermanager().fetchAddUser(user) ;
 				return new ModelAndView(super.getSuccessView()) ;

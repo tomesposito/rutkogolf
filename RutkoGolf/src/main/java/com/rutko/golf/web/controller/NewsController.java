@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang.StringUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.safety.Whitelist;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.rutko.golf.model.hibernate.News;
@@ -30,8 +32,8 @@ public class NewsController extends AbstractController {
 					&& StringUtils.isNotEmpty(request.getParameter(this.getNewstitleparam()))
 					){
 				News news = this.getNewsmanager().fetchNewsByID(Integer.parseInt(request.getParameter(this.getNewsidparam()))) ;
-				news.setTitle(request.getParameter(this.getNewstitleparam())) ;
-				news.setContent(request.getParameter(this.getNewscontentparam())) ;
+				news.setTitle(Jsoup.clean(request.getParameter(this.getNewstitleparam()), Whitelist.none())) ;
+				news.setContent(Jsoup.clean(request.getParameter(this.getNewscontentparam()), Whitelist.relaxed())) ;
 				news.setUser((User)request.getSession().getAttribute("user")) ;
 				news.setTimestamp(new Date()) ;
 				this.getNewsmanager().fetchUpdateNews(news) ;
@@ -39,8 +41,8 @@ public class NewsController extends AbstractController {
 			}else if(StringUtils.isEmpty(request.getParameter(this.getNewsidparam()))
 					&& StringUtils.isNotEmpty(request.getParameter(this.getNewstitleparam()))){
 				News news = new News() ;
-				news.setTitle(request.getParameter(this.getNewstitleparam())) ;
-				news.setContent(request.getParameter(this.getNewscontentparam())) ;
+				news.setTitle(Jsoup.clean(request.getParameter(this.getNewstitleparam()), Whitelist.none())) ;
+				news.setContent(Jsoup.clean(request.getParameter(this.getNewscontentparam()), Whitelist.relaxed())) ;
 				news.setUser((User)request.getSession().getAttribute("user")) ;
 				news.setTimestamp(new Date()) ;
 				this.getNewsmanager().fetchUpdateNews(news) ;
