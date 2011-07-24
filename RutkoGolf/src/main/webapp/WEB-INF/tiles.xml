@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="main.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf" type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/main.jsp" />
+	</definition>
+
+	<definition name="home.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf" type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/home.jsp" />
+	</definition>
+
+	<definition name="about.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - About"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/about.jsp" />
+	</definition>
+
+	<definition name="sponsors.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Sponsors"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/sponsors.jsp" />
+	</definition>
+
+	<definition name="photos.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Photos"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/photos.jsp" />
+	</definition>
+
+	<definition name="contact.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Contact"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/contact.jsp" />
+	</definition>
+
+	<definition name="signup.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Sign Up!"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/signup.jsp" />
+	</definition>
+
+	<definition name="news.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - News"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/blank.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/news.jsp" />
+	</definition>
+
+	<definition name="newsitem.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - News"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/news_item.jsp" />
+	</definition>
+
+	<definition name="login.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Login"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/blank.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/login.jsp" />
+	</definition>
+
+	<definition name="user.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - User Info"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/blank.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/user.jsp" />
+	</definition>
+	
+	<definition name="success.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Success"
+			type="string" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/blank.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/success.jsp" />
+	</definition>
+
+</tiles-definitions>
