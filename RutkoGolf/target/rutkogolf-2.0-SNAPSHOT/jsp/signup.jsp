@@ -1,5 +1,5 @@
 <h1>Sign Up!</h1>
-<p>To sign up, you can simply use the PayPay button below to pay online or you can <a href="/rutkogolf/golf/contact">contact us</a> for alternative payment methods</p>
+<p>To sign up, you can simply use the PayPay button below to pay online or you can <a href="/golf/contact">contact us</a> for alternative payment methods</p>
 <br /><br />
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
 <input type="hidden" name="cmd" value="_s-xclick">

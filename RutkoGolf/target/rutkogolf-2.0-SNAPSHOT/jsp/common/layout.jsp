@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<link href="/rutkogolf/css/style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="/css/style.css" rel="stylesheet" media="screen" type="text/css" />
 <title><tiles:insertAttribute name="title" /></title>
 </head>
 <body>

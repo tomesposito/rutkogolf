@@ -5,7 +5,7 @@
 </h1>
 <div id="show">
 	<c:forEach var="item" items="${news}">
-		<h3><a href="/rutkogolf/golf/news/${item.id}">${item.title}</a></h3>
+		<h3><a href="/golf/news/${item.id}">${item.title}</a></h3>
 		<h5>Created by ${item.user.fname} ${item.user.lname} on <fmt:formatDate value="${item.timestamp}" type="both" /></h5>
 		${item.content}
 		<br /><br /><br />
@@ -14,7 +14,7 @@
 <c:if test="${sessionScope.user != null}">
 	<div id="new">
 		<h1>Create News</h1>
-		<form action="/rutkogolf/golf/save_news" method="POST" >
+		<form action="/golf/save_news" method="POST" >
 			<input type="hidden" name="action" value="edit" />
 			<table>
 				<tr>

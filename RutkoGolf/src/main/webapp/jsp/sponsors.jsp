@@ -40,7 +40,7 @@
 <c:if test="${sessionScope.user != null}">
 	<div id="new">
 		<h1>Create a Sponsor</h1>
-		<form action="/rutkogolf/golf/sponsors" method="POST" >
+		<form action="/golf/sponsors" method="POST" >
 			<input type="hidden" name="action" value="create" />
 			<table>
 				<tr>
@@ -89,7 +89,7 @@
 	</div>
 	<div id="edit">
 		<h1>Edit Sponsor</h1>
-		<form action="/rutkogolf/golf/sponsors" method="POST" >
+		<form action="/golf/sponsors" method="POST" >
 			<input type="hidden" name="action" value="update" />
 			<input type="hidden" id="edit_id" name="id" value="" />
 			<table>
@@ -138,7 +138,7 @@
 		</form>
 	</div>
 	<div id="delete">
-		<form action="/rutkogolf/golf/sponsors" id="delete_form" method="POST" >
+		<form action="/golf/sponsors" id="delete_form" method="POST" >
 			<input type="hidden" name="action" value="delete" />
 			<input type="hidden" id="delete_id" name="id" value="" />
 		</form>

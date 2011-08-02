@@ -11,7 +11,7 @@
 <c:if test="${sessionScope.user != null}">
 	<div id="edit">
 		<h1>Edit item #${news_item.id}</h1>
-		<form action="/rutkogolf/golf/save_news" method="POST" >
+		<form action="/golf/save_news" method="POST" >
 			<input type="hidden" name="action" value="edit" />
 			<input type="hidden" name="id" value="${news_item.id}" />
 			<table>
@@ -30,7 +30,7 @@
 		</form>
 	</div>
 	<div id="delete">
-		<form action="/rutkogolf/golf/save_news" id="delete_form" method="POST" >
+		<form action="/golf/save_news" id="delete_form" method="POST" >
 			<input type="hidden" name="action" value="delete" />
 			<input type="hidden" name="id" value="${news_item.id}" />
 		</form>

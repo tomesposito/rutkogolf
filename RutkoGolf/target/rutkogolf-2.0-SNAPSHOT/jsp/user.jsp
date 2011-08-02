@@ -8,7 +8,7 @@
 		</div>
 		<div id="change_pass">
 			<h1>Change Password</h1>
-			<form action="/rutkogolf/golf/update_user" method="post">
+			<form action="/golf/update_user" method="post">
 				<input type="hidden" name="action" value="changepass" />
 				<input type="hidden" name="username" value="${user.username}" />
 				<table>
@@ -37,7 +37,7 @@
 		</div>
 		<div id="create_user">
 			<h1>Create a New User</h1>
-			<form action="/rutkogolf/golf/update_user" method="post">
+			<form action="/golf/update_user" method="post">
 				<input type="hidden" name="action" value="create" />
 				<table>
 					<tr>
@@ -123,7 +123,7 @@
 	</c:when>
 	<c:otherwise>
 		<script type="text/javascript">
-			$(location).attr('href', '/rutkogolf/golf/home') ;
+			$(location).attr('href', '/golf/home') ;
 		</script>
 	</c:otherwise>
 </c:choose>

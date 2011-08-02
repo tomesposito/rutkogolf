@@ -12,13 +12,21 @@
 		<!-- this will show us all sql statements -->
 		<property name="show_sql">false</property>
 		
-		<!-- configuration pool via c3p0 -->
-		<property name="c3p0.acquire_increment">1</property>
-		<property name="c3p0.idle_test_period">100</property> <!-- seconds -->
-		<property name="c3p0.max_size">100</property>
-		<property name="c3p0.max_statements">0</property>
-		<property name="c3p0.min_size">10</property>
-		<property name="c3p0.timeout">100</property> <!-- seconds -->
+		<!-- configuration pool via c3p0
+                <property name="c3p0.acquire_increment">1</property>
+                <property name="c3p0.idle_test_period">100</property>
+                <property name="c3p0.max_size">100</property>
+                <property name="c3p0.max_statements">0</property>
+                <property name="c3p0.min_size">10</property>
+                <property name="c3p0.timeout">100</property>  seconds -->
+
+                <property name="hibernate.c3p0.acquire_increment">3</property>
+                <property name="hibernate.c3p0.idle_test_period">14400</property>
+                <property name="hibernate.c3p0.timeout">25200</property>
+                <property name="hibernate.c3p0.max_size">15</property>
+                <property name="hibernate.c3p0.min_size">3</property>
+                <property name="hibernate.c3p0.max_statements">0</property>
+                <property name="hibernate.c3p0.preferredTestQuery">select 1;</property>
 
 		<mapping class="com.rutko.golf.model.hibernate.News" />
 		<mapping class="com.rutko.golf.model.hibernate.User" />

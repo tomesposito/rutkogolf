@@ -10,17 +10,11 @@
 				<Set name="url">jdbc:mysql://localhost:3306/rutkogolf</Set> <Set name="username">espotw</Set> 
 				<Set name="password">fuckyou</Set> </New> -->
 			<New class="com.mchange.v2.c3p0.ComboPooledDataSource">
-				<Set name="driverClass">com.mysql.jdbc.Driver</Set>
-				<Set name="jdbcUrl">jdbc:mysql://localhost:3306/rutkogolf</Set>
-				<Set name="user">espotw</Set>
-				<Set name="password">fuckyou</Set>
-				<Set name="minPoolSize">1</Set>
-				<Set name="acquireIncrement">1</Set>
-				<Set name="maxPoolSize">10</Set>
-				<Set name="idleConnectionTestPeriod">300</Set>
-				<Set name="checkoutTimeout">0</Set>
-				<Set name="maxStatementsPerConnection">50</Set>
-			</New>
+              <Set name="driverClass">com.mysql.jdbc.Driver</Set>
+              <Set name="jdbcUrl">jdbc:mysql://localhost:3306/rutkogolf</Set>
+              <Set name="user">espotw</Set>
+              <Set name="password">fuckyou</Set>
+      </New>
 		</Arg>
 	</New>
 </Configure>
