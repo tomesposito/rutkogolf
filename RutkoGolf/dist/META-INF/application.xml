@@ -10,7 +10,7 @@
 
 	<web>
 		<web-uri>rutkogolf.war</web-uri>
-		<context-root>rutkogolf</context-root>
+		<context-root>/</context-root>
 	</web>
 </module>
 

@@ -4,7 +4,7 @@
 <h1>login failed, please try again</h1>
 </c:if>
 <form id="loginform" action="login" method="POST">
-<table>
+<table class="loginbox">
 	<tr>
 		<td align="right">username: </td>
 		<td><input type="text" id="user" name="user" /></td>

@@ -3,12 +3,15 @@
 	News 
 	<c:if test="${sessionScope.user != null}"> - <a id="create" href="#">create</a></c:if>
 </h1>
+<br />
 <div id="show">
 	<c:forEach var="item" items="${news}">
-		<h3><a href="/golf/news/${item.id}">${item.title}</a></h3>
+		<fieldset style="padding:5px 10px 10px 10px;border:2px solid #fff;">
+		<legend><h4><a href="/golf/news/${item.id}">${item.title}</a></h4></legend>
 		<h5>Created by ${item.user.fname} ${item.user.lname} on <fmt:formatDate value="${item.timestamp}" type="both" /></h5>
 		${item.content}
-		<br /><br /><br />
+		</fieldset>
+		<br />
 	</c:forEach>
 </div>
 <c:if test="${sessionScope.user != null}">

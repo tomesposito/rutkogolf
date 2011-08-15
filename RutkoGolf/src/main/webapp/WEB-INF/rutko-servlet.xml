@@ -59,6 +59,11 @@
 		<property name="newsmanager" ref="newsmanager" />
 		<property name="successView" value="about.def" />
 	</bean>
+	<bean name="/donate" class="com.rutko.golf.web.controller.MainController">
+		<property name="newsattrib" value="news" />
+		<property name="newsmanager" ref="newsmanager" />
+		<property name="successView" value="donate.def" />
+	</bean>
 	<bean name="/sponsors" class="com.rutko.golf.web.controller.SponsorController">
 		<property name="sponsorattrib" value="sponsors" />
 		<property name="sponsoractionparam" value="action" />

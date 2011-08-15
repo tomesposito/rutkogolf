@@ -7,6 +7,7 @@
 
 	<definition name="main.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf" type="string" />
+		<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -16,6 +17,7 @@
 
 	<definition name="home.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf" type="string" />
+		<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -26,16 +28,27 @@
 	<definition name="about.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - About"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
 		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
 		<put-attribute name="content" value="/jsp/about.jsp" />
 	</definition>
-
+	<definition name="donate.def" template="/jsp/common/layout.jsp">
+		<put-attribute name="title" value="Rutkowski Golf - Donate"
+			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
+		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
+		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
+		<put-attribute name="news" value="/jsp/common/news.jsp" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-attribute name="content" value="/jsp/donate.jsp" />
+	</definition>
 	<definition name="sponsors.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Sponsors"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -46,6 +59,7 @@
 	<definition name="photos.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Photos"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -56,6 +70,7 @@
 	<definition name="contact.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Contact"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -66,6 +81,7 @@
 	<definition name="signup.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Sign Up!"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -76,6 +92,7 @@
 	<definition name="news.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - News"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/blank.jsp" />
@@ -86,6 +103,7 @@
 	<definition name="newsitem.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - News"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/news.jsp" />
@@ -96,6 +114,7 @@
 	<definition name="login.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Login"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/blank.jsp" />
@@ -106,6 +125,7 @@
 	<definition name="user.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - User Info"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/blank.jsp" />
@@ -116,6 +136,7 @@
 	<definition name="success.def" template="/jsp/common/layout.jsp">
 		<put-attribute name="title" value="Rutkowski Golf - Success"
 			type="string" />
+			<put-attribute name="login" value="/jsp/common/login.jsp" />
 		<put-attribute name="masthead" value="/jsp/common/header.jsp" />
 		<put-attribute name="nav" value="/jsp/common/nav.jsp" />
 		<put-attribute name="news" value="/jsp/common/blank.jsp" />

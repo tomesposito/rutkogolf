@@ -1,12 +1,14 @@
 <%@include file="include/include.jsp" %>
 <div id="show">
-	<h1>${news_item.title}</h1>
-	<p>${news_item.user.fname} ${news_item.user.lname}</p>
-	<p><fmt:formatDate value="${news_item.timestamp}" type="both" /></p>
-	<p>${news_item.content}</p>
-	<c:if test="${sessionScope.user != null}">
-		<p><a id="edit_news" href="#">edit</a> | <a id="delete_news" href="#">delete</a></p>
-	</c:if>
+	<fieldset style="padding:5px 10px 10px 10px;border:2px solid #fff;">
+		<legend><h1>${news_item.title}</h1></legend>
+		<p><strong>Author:</strong> ${news_item.user.fname} ${news_item.user.lname}</p>
+		<p><strong>Posted:</strong> <fmt:formatDate value="${news_item.timestamp}" type="both" /></p>
+		<p><strong>Message:</strong> ${news_item.content}</p>
+		<c:if test="${sessionScope.user != null}">
+			<p><a id="edit_news" href="#">edit</a> | <a id="delete_news" href="#">delete</a></p>
+		</c:if>
+	</fieldset>
 </div>
 <c:if test="${sessionScope.user != null}">
 	<div id="edit">

@@ -7,7 +7,21 @@
 	Sponsors
 	<c:if test="${sessionScope.user != null}"> - <a id="create" href="#">new</a></c:if>
 </h1>
+<br />
+<p>You can help us help others by supporting the Second Annual Rutkowski Invitational Golf Outing. Sponsorship options are as follows: </p> 
+<ul style="padding-left:20px;color:#000;list-style-type:disc;"> 
+<li>Hole Sponsor ($100): signage at tee box and recognition on outing's website.</li> 
+<li>Raffle Prize Donations: signage in raffle programs and recognition on outing's website.</li> 
+</ul> 
+<p>Additional Information:
+<ul style="padding-left:20px;color:#000;list-style-type:disc;"> 
+<li><a href="/docs/2011_Sponsor_letter.pdf" target="_blank">Sponsor Information</a></li> 
+<li><a href="/docs/American_Cancer_Society_Tax_Exempt.pdf" target="_blank">Tax Exempt Information</a></li> 
+</ul> 
+</p> 
+<br /> 
 <i>A special thank you to all of our sponsors for their support!</i>
+<br /><br />
 <div id="show">
 	<c:forEach var="sponsor" items="${sponsors}" varStatus="status">
 	<script type="text/javascript">
@@ -22,6 +36,7 @@
 		                	   "website": "${sponsor.website}"}}) ;
 	</script>
 	<hr />
+	<br />
 	<h1>
 		${sponsor.name}
 		<c:if test="${sessionScope.user != null}"> - 
@@ -30,6 +45,7 @@
 			<a id="delete_link" href="javascript:del(${status.count});">delete</a>
 		</c:if>
 	</h1>
+	<br />
 	<h4>${sponsor.description}</h4>
 	<p>${sponsor.phone} <br />
 	${sponsor.address}<br />
