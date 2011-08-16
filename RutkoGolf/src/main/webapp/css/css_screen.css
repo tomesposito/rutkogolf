@@ -1,0 +1,230 @@
+/***********************************************************************
+
+Author:     gus
+URL:        
+
+***********************************************************************/
+
+body {
+	color:#000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0 10px;
+	padding: 0px;
+}
+
+.clear{clear:both;}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/*
+  styling
+*/
+
+html {
+	background:url('../img/bg_screen2.jpg') no-repeat top center fixed;
+	background-size:cover;
+	color:#000;
+	font:normal normal normal 12px/12px sans-serif;
+}
+
+html, body {
+	overflow:visible;
+}
+
+a{
+	font-size:12px;
+}
+
+p{
+	margin: 15px 0px;
+}
+
+#logoContainer{
+	margin:0 auto;
+	width:700px;
+	height:110px;
+	margin-top:50px;
+	background-image:url("../img/title.png");
+	background-repeat:no-repeat;
+	background-size:700px 110px;
+	position:static;
+}
+#login {
+	font-size: 9px;
+	color:#000;
+	position:absolute;
+	right: 15px ;
+	top: 5px ;
+}
+#login a{
+	font-size: 9px;
+	color:#000;
+	text-decoration: none ;
+}
+#login a:hover{
+	font-size: 9px;
+	color:#000;
+	text-decoration: underline ;
+}
+#main {
+	margin:0 auto;
+	width:700px;
+	background-color: rgba(234,247,188,.6);
+	text-align: left;
+	margin-top:50px;
+	border: 2px outset #666;
+	box-shadow: rgba(0,0,0, .5) 0px 0px 3px;
+}
+
+#header {
+	color:#32587c;
+	font-size:100%;
+	line-height:100%;
+	
+	background-image:url('../img/header2.jpg');
+	background-repeat:no-repeat;
+	background-size:700px 265px;
+	padding-bottom:265px;
+}
+
+#header h1 {
+	margin:0 auto;
+	float:left;
+	padding-left:20px;
+	padding-top:240px;
+	padding-bottom:14px;
+	font-weight:normal;
+	width:400px;
+	font-size:25px;
+	font-family: helvetica, Verdana, Arial;
+	color:#022601;
+}
+
+#main ul {
+	list-style:none;
+	margin:0 0 1.0em;
+	color:#bcd9ff;
+}
+#main ul li {
+	margin:0;
+}
+#main a {
+	color:#579af2;
+	text-decoration:none;
+}
+#main a:hover {
+	color:#022601;
+	text-decoration:none;
+}
+#main a.current {
+	color:#022601;
+	text-decoration:none;
+}
+
+#content {
+	margin:0 auto;
+	width:700px;
+	height:250px;
+	text-align: left;
+}
+
+h2 {
+	float:left;
+	padding-left:20px;
+	font-weight:normal;
+	font-size:25px;
+	font-family: helvetica, Verdana, Arial;
+	color:#022601;
+}
+
+h3 {
+	float:left;
+	padding-left:20px;
+	font-weight:normal;
+	font-size:14px;
+	font-family: helvetica, Verdana, Arial;
+	color:#022601;
+}
+
+#left {
+	float:left;
+	width:428px;
+	padding: 25px 10px 30px 10px;
+	display:inline;
+	position:static;
+}
+
+#left a{color:#28556b;}
+#left a:hover{color:#c77e0c;}
+
+#left .loginbox{
+	position: relative ;
+	padding-top: 25px ;
+	}
+
+#photos a{
+margin-right:14px;
+}
+
+#right {
+float:right;
+width:210px;
+padding: 0px 20px 20px 20px;
+margin-top:10px;
+border-left: #FFF 2px solid;
+
+}
+#right a{
+color:#c77e0c;
+}
+#right a:hover{
+color:#85a157;
+}
+#right .posted{
+color:#000;
+        font-size: 10px;
+}
+#right p{
+margin: 8px 0px;
+}
+#right h2 a{
+color:#85a157;
+font-size:14px;
+text-align:center;
+width:200px;
+margin: 10px 0px 15px 0px;
+text-decoration: none ;
+}
+#right h2 a:hover{
+color:#85a157;
+font-size:14px;
+text-align:center;
+width:200px;
+margin: 10px 0px 15px 0px;
+text-decoration: underline ;
+}
+/********************** Footer ***************************/
+
+#footerline {
+clear:both;
+background-image:url(../images/footer_bg.gif);
+font-size:1px;
+height:10px;
+}
+#footer {
+font-size: .8em ;
+width: 99% ;
+text-align:center ;
+padding: 20px 0px;
+position: absolute ;
+}
+
+#footer a{
+font-size: 1em ;
+text-decoration:none ;
+color: #000 ;
+}
